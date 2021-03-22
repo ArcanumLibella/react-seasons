@@ -1,4 +1,4 @@
-.container {
+.season-display {
   position: relative;
   display: flex;
   justify-content: center;
@@ -9,11 +9,11 @@
   border-radius: 8px;
 }
 
-.container.winter {
+.season-display.winter {
   background-color: rgba(125, 253, 255, 0.995);
 }
 
-.container.summer {
+.season-display.summer {
   background-color: rgba(254, 216, 63, 0.995);
 }
 

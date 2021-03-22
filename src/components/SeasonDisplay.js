@@ -27,7 +27,7 @@ export default function SeasonDisplay (props) {
   return (
     <div>
       <h1>Season</h1>
-      <div className={`${season} container`}>
+      <div className={`season-display ${season}`}>
         <i className={`${iconName} icon-left huge icon`} />
         <h3>{text}</h3>
         <i className={`${iconName} icon-right huge icon`} />
