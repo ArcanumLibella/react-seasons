@@ -16,7 +16,7 @@ const seasonConfig = {
   },
   winter: {
     text: 'Burr, it is chilly !',
-    iconName: 'winter'
+    iconName: 'snowflake'
   }
 }
 
@@ -27,7 +27,7 @@ export default function SeasonDisplay (props) {
   return (
     <div>
       <h1>Season</h1>
-      <div className='container'>
+      <div className={`${season} container`}>
         <i className={`${iconName} icon-left huge icon`} />
         <h3>{text}</h3>
         <i className={`${iconName} icon-right huge icon`} />
