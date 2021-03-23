@@ -1,5 +1,6 @@
 import React from 'react'
 import './SeasonDisplay.css'
+import Clock from './Clock'
 
 const getSeason = (lat, month) => {
   if (month > 2 && month < 9) {
@@ -32,6 +33,7 @@ export default function SeasonDisplay (props) {
         <h3>{text}</h3>
         <i className={`${iconName} icon-right huge icon`} />
       </div>
+      <Clock />
     </div>
   )
 }
