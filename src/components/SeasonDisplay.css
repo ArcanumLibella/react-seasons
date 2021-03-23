@@ -17,6 +17,10 @@
   background-color: rgba(254, 216, 63, 0.995);
 }
 
+.season-display h3 {
+  text-transform: uppercase;
+}
+
 .icon-left {
   position: absolute;
   top: 10px;

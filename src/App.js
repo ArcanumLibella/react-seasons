@@ -1,3 +1,4 @@
+/* eslint-disable react/require-render-return */
 import React, { Component } from 'react'
 import SeasonDisplay from './components/SeasonDisplay'
 import Spinner from './components/Spinner'
@@ -12,23 +13,23 @@ export default class App extends Component {
     )
   }
 
-  render () {
+  appWrapper() {
     if (this.state.errorMessage && !this.state.lat) {
-      return (
-        <div className='App'>
-          <h1>Error : {this.state.errorMessage}</h1>
-        </div>
-      )
+      return <h1>Error : {this.state.errorMessage}</h1>
     }
 
     if (!this.state.errorMessage && this.state.lat) {
-      return (
-        <div className='App'>
-          <SeasonDisplay lat={this.state.lat} />
-        </div>
-      )
+      return <SeasonDisplay lat={this.state.lat} />
     }
 
     return <Spinner message='Please accept location request'/>
+  }
+
+  render () {
+    return (
+      <div className='App'>
+        {this.appWrapper()}
+      </div>
+    )
   }
 }
